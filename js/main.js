@@ -41,7 +41,12 @@ if (footer) {
       <div><h2 class="mb-4 font-display text-xl">Contact</h2><p class="text-sm leading-7 text-white/70">Add the lodge’s phone number<br>and official email address<br>Town, South Africa</p></div>
       <div><h2 class="mb-4 font-display text-xl">Plan Your Stay</h2><p class="text-sm leading-6 text-white/70">Have a question or planning a visit?</p><a class="mt-4 inline-block text-sm underline underline-offset-4" href="${pathTo("pages/booking.html")}">Make an enquiry →</a></div>
     </div>
-    <div class="border-t border-white/15"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-5 text-xs text-white/50 sm:flex-row sm:justify-between"><span>© ${new Date().getFullYear()} Camelot Country Lodge. All rights reserved.</span><span>Escape · Relax · Reconnect</span></div></div>
+    <div class="border-t border-white/15">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-5 text-xs text-white/50 sm:flex-row sm:justify-between">
+        <span>© ${new Date().getFullYear()} Camelot Country Lodge. All rights reserved. Designed and hosted by Jabez Greenan</span>
+        <span>Escape · Relax · Reconnect</span>
+      </div>
+    </div>
   </footer>`;
 }
 document.addEventListener("click", (event) => {
