@@ -37,13 +37,32 @@ if (footer) {
   <footer class="bg-camelot-ink text-white">
     <div class="mx-auto grid max-w-7xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-4">
       <div>${logo}<p class="mt-5 max-w-xs text-sm leading-6 text-white/60">Escape · Relax · Reconnect</p></div>
-      <div><h2 class="mb-4 font-display text-xl">Quick Links</h2><div class="flex flex-col gap-2 text-sm text-white/70">${navLinks}<a href="${pathTo("pages/booking.html")}">Book Now</a></div></div>
-      <div><h2 class="mb-4 font-display text-xl">Contact</h2><p class="text-sm leading-7 text-white/70">Add the lodge’s phone number<br>and official email address<br>Town, South Africa</p></div>
-      <div><h2 class="mb-4 font-display text-xl">Plan Your Stay</h2><p class="text-sm leading-6 text-white/70">Have a question or planning a visit?</p><a class="mt-4 inline-block text-sm underline underline-offset-4" href="${pathTo("pages/booking.html")}">Make an enquiry →</a></div>
+      <div>
+        <h2 class="mb-4 font-display text-xl">Quick Links</h2>
+          <div class="flex flex-col gap-2 text-sm text-white/70">${navLinks}
+          <a href="${pathTo("pages/booking.html")}">Book Now</a>
+          </div>
+        </div>
+      <div>
+
+        <h2 class="mb-4 font-display text-xl">Contact</h2>
+        <p class="text-sm leading-7 text-white/70">+27 ....</p>
+        <p class="text-sm leading-7 text-white/70">camelot.estate@gmail.com</p>
+        <p class="text-sm leading-7 text-white/70">R64 Bosof Road, Kimberley, Northern Cape, South Africa</p>
+
+      </div>
+      <div>
+
+        <h2 class="mb-4 font-display text-xl">Plan Your Stay</h2>
+        <p class="text-sm leading-6 text-white/70">Have a question or planning a visit?</p>
+        <a class="mt-4 inline-block text-sm underline underline-offset-4" href="${pathTo("pages/booking.html")}">Make an enquiry →</a>
+      </div>
+
     </div>
+
     <div class="border-t border-white/15">
       <div class="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-5 text-xs text-white/50 sm:flex-row sm:justify-between">
-        <span>© ${new Date().getFullYear()} Camelot Country Lodge. All rights reserved. Designed and hosted by Jabez Greenan</span>
+        <span>© ${new Date().getFullYear()} Camelot Country Lodge. All rights reserved. Designed and hosted by Jabez Greenan.</span>
         <span>Escape · Relax · Reconnect</span>
       </div>
     </div>
