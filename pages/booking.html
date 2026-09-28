@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Camelot Country Lodge.">
+  <title>Book Now | Camelot Country Lodge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { camelot: { ink:'#242820', forest:'#29352b', gold:'#b69b5e', cream:'#f6f4ef', sand:'#e7e0d2' } }, fontFamily: { display:['Georgia','serif'] } } } };
+  </script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script defer src="../js/main.js"></script>
+</head>
+<body data-page="booking" class="bg-camelot-cream text-camelot-ink">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero" style="background-image:linear-gradient(90deg,rgba(20,25,20,.72),rgba(20,25,20,.25)),url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1800&q=85')">
+      <div class="mx-auto max-w-7xl px-6 py-24 text-white">
+        <p class="eyebrow">CAMELOT COUNTRY LODGE</p>
+        <h1 class="mt-4 font-display text-5xl sm:text-6xl">Plan Your Stay</h1>
+        <p class="mt-5 max-w-2xl text-lg text-white/85">Send us your dates and we’ll help you with availability.</p>
+      </div>
+    </section>
+    
+<section class="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-[.8fr_1.2fr]">
+  <div><p class="eyebrow text-camelot-gold">BOOKING ENQUIRY</p><h2 class="section-title mt-3">Your country escape starts here</h2><p class="mt-5 leading-7 text-stone-600">Complete the enquiry form with your preferred dates and guest numbers. This template prepares an email for the lodge; it does not check live availability or confirm a reservation.</p></div>
+  <form class="contact-form" data-booking-form>
+    <label>Your name<input required name="name" autocomplete="name" placeholder="Full name"></label>
+    <label>Email address<input required type="email" name="email" autocomplete="email" placeholder="you@example.com"></label>
+    <div class="grid gap-5 sm:grid-cols-2"><label>Check-in<input required type="date" name="checkin"></label><label>Check-out<input required type="date" name="checkout"></label></div>
+    <div class="grid gap-5 sm:grid-cols-2"><label>Guests<select name="guests"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label><label>Room preference<select name="room"><option>No preference</option><option>Standard Room</option><option>Deluxe Room</option><option>Family Room</option></select></label></div>
+    <label>Additional details<textarea name="message" rows="4" placeholder="Anything else we should know?"></textarea></label>
+    <button class="btn btn-dark" type="submit">Send Booking Enquiry →</button>
+    <p class="text-xs text-stone-500">Enquiries are not reservations until the lodge confirms availability.</p>
+  </form>
+</section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
